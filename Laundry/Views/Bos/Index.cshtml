@@ -15,9 +15,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Password)
             </th>
-            <th></th>
-            <th></th>
-            <th></th>
+            <th>@Html.DisplayName("Manage Data")</th>
         </tr>
     </thead>
     <tbody>
@@ -30,13 +28,7 @@
                 @Html.DisplayFor(modelItem => item.Password)
             </td>
             <td>
-                <a asp-action="Karyawans">Atur Data Karyawan</a>
-            </td>
-            <td>
-                <a asp-action="DetailPelayanans">Lihat Detail Pelayanan</a>
-            </td>
-            <td>
-                <a asp-action="Pesanans">Atur Data Pesanan</a>
+                <a asp-action="Karyawans">Atur Data Karyawan</a> | <a asp-action="DetailPelayanans">Lihat Detail Pelayanan</a> | <a asp-action="Pesanans">Atur Data Pesanan</a>
             </td>
         </tr>
 }

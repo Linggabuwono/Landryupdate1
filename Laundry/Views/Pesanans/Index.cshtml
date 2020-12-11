@@ -14,7 +14,7 @@
 {
     <p>
         Cari Data : @Html.TextBox("searchString")
-        <input type="submit" value="Cari Bos" />
+        <input type="submit" value="Cari Pesanan" />
     </p>
 }
 
@@ -22,6 +22,9 @@
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayName("ID Pesnan")
+            </th>
             <th>
                 @Html.DisplayName("Nama Customer")
             </th>
@@ -46,6 +49,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdPesanan)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.NamaCustomer)
             </td>
